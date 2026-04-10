@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table { border-collapse: collapse; margin-top: 20px; }
+        td { border: 1px solid rgb(126, 34, 83); padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+    <input type="number" id="rows" placeholder="Number of rows">
+    <input type="number" id="cols" placeholder="Number of columns">
+    <button onclick="generateTable()">Generate Table</button>
+    <div id="container"></div>
+    <script>
+        function generateTable() {
+            let r = document.getElementById("rows").value;
+            let c = document.getElementById("cols").value;
+            let div = document.getElementById("container");
+            let tableHTML = "<table>";
+            for (let i = 1; i <= r; i++) {
+                tableHTML += "<tr>";
+                for (let j = 1; j <= c; j++) {
+                    tableHTML += "<td>Row " + i + " Col " + j + "</td>";
+                }
+                tableHTML += "</tr>";
+            }
+            tableHTML += "</table>";
+            div.innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>
