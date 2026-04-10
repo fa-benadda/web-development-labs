@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo Classes</title>
+<style>
+a:hover{
+color:pink;
+}
+input:focus{
+border:2px solid rgb(222, 78, 155);
+background-color:lightyellow;
+}
+tr:nth-child(odd){
+background-color:lightgray;
+}
+p:not(.special){
+color:purple;
+}
+input[type="checkbox"]:checked{
+width:20px;
+height:20px;
+}
+button:active{
+background-color:rgb(157, 87, 126);
+}
+input:required{
+border:2px solid rgb(21, 14, 27);
+}
+</style>
+</head>
+<body>
+<h2>Link Example</h2>
+<a href="#">Hover on this link</a>
+<h2>Input Focus</h2>
+<input type="text" placeholder="Click here">
+<h2>Table Example</h2>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>Ali</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Sara</td>
+<td>21</td>
+</tr>
+<tr>
+<td>Omar</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Lina</td>
+<td>23</td>
+</tr>
+</table>
+
+<h2>Paragraphs</h2>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p class="special">Paragraph 3</p>
+<p>Paragraph 4</p>
+
+<h2>Checkbox</h2>
+<input type="checkbox"> Accept
+
+<h2>Button</h2>
+<button>Click Me</button>
+
+<h2>Required Input</h2>
+<input type="text" required placeholder="Required field">
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mastering CSS3</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
+        header { background-color: #007bff; color: white; text-align: center; padding: 25px 10px; }
+        header h1 { margin: 0; font-size: 24px; }
+        header p { margin: 5px 0 0; font-size: 14px; opacity: 0.9; }
+        nav { background-color: #0056b3; display: flex; justify-content: center; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 13px; font-weight: bold; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+        .section-box { background: white; border: 1px solid #e0e0e0; margin-bottom: 20px; padding: 15px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .section-title { font-weight: bold; border-bottom: 2px solid #f0f0f0; margin-bottom: 15px; padding-bottom: 5px; color: #444; }
+        .grid-container { display: flex; gap: 0; margin-top: 10px; border: 1px solid #ddd; }
+        .box { flex: 1; height: 35px; color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; }
+        .red { background-color: #ff0000; }
+        .green { background-color: #008000; }
+        .blue { background-color: #0000ff; }
+        .btn-anim { background-color: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; transition: 0.3s; font-size: 13px; }
+        .btn-anim:hover { background-color: #218838; transform: scale(1.05); }
+        footer { background: #333; color: white; text-align: center; padding: 10px; font-size: 11px; position: fixed; bottom: 0; width: 100%; }
+        p { font-size: 14px; line-height: 1.6; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mastering CSS3</h1>
+    <p>Enhance your styling skills with modern CSS</p>
+</header>
+
+<nav>
+    <a href="#">Text Styling</a>
+    <a href="#">Layouts</a>
+    <a href="#">Animations</a>
+    <a href="#">Responsive Design</a>
+</nav>
+
+<div class="container">
+    <div class="section-box">
+        <div class="section-title">Text Styling</div>
+        <p>CSS3 allows for advanced text styling, such as <span style="color: #007bff; text-decoration: underline;">color changes</span> and font variations.</p>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">Layouts with Flexbox & Grid</div>
+        <div class="grid-container">
+            <div class="box red">Box 1</div>
+            <div class="box green">Box 2</div>
+            <div class="box blue">Box 3</div>
+        </div>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">CSS3 Animations</div>
+        <button class="btn-anim">Hover Me!</button>
+    </div>
+
+    <div class="section-box">
+        <div class="section-title">Responsive Design</div>
+        <p>This page adapts to different screen sizes using CSS3 techniques.</p>
+    </div>
+</div>
+
+<footer>&copy; 2026 CSS3 Tutorial</footer>
+
+</body>
+</html>

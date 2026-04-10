@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        .my-text { font-family: Arial, sans-serif; 
+            font-size: 20px;
+             text-align: center;
+        text-decoration: underline; }
+
+        .my-box { width: 200px;
+             height: 100px;
+              padding: 10px; 
+              margin: 20px; 
+              border: 2px solid black; 
+              background-color: rgb(175, 71, 111); }
+       
+       
+       
+        :root { --primary: rgb(255, 80, 255);
+             --secondary: white; }
+        .box-vars { background-color: var(--primary);
+             color: var(--secondary); }
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="my-text">عنوان الصفحة</h1>
+    <div class="my-box">صندوق تجريبي</div>
+    <div class="box-vars">صندوق بالألوان</div>
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+    
+
+</body>
+</html>
